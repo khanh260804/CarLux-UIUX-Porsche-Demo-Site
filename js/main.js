@@ -53,9 +53,10 @@ btnAddCarts.forEach(button=>{
 })
  
 function updateCart(){
+  cart=getCartLocalStorage();
   if(cart.length==0){
     cartItems.innerHTML=`<span>Empty!</span>`;
-    cartTotal.textContent="0 VNĐ"
+    cartTotal.textContent="0 VNĐ";
   } 
   else{
     cartItems.innerHTML=``;
@@ -95,11 +96,11 @@ function updateCart(){
         button.addEventListener('click', function(){
           const masp = button.getAttribute('data-id');
           const sp = cart.find(item => item.ma === masp)
-          console.log(masp);
-          if(sp&&sp.quantity > 1){
+          if(sp && sp.quantity > 1){
             sp.quantity -= 1;
             saveCartLocalStorage(cart);
             updateCart();
+            showItem(cart);
           }
         })
       })
@@ -110,6 +111,7 @@ function updateCart(){
           sp.quantity+=1;
           saveCartLocalStorage(cart);
           updateCart();
+          showItem(cart);
         })
       })
       document.querySelectorAll('.btn-delete').forEach(button=>{
@@ -119,6 +121,7 @@ function updateCart(){
           cart=cart.filter(item=>item.ma!==masp);
           saveCartLocalStorage(cart);
           updateCart();
+          showItem(cart);
         })
       })
     })

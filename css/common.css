@@ -87,10 +87,7 @@ button{
     list-style: none;
     padding: 10px;
 }
-.menu li:hover a{
-    text-decoration: underline ;
-    text-decoration-thickness: 0.5px;
-}
+
 .sp-dropdown a{
     display: flex;
 }
@@ -224,6 +221,12 @@ button{
     color: white;
     font-weight: 600;
     font-size: 15px;
+}
+.cart-summary button:hover{
+    background: linear-gradient(to right, #222, #444);
+}
+.cart-summary a{
+    text-decoration: none;
 }
 .cart-item{
     text-align: center;
