@@ -132,6 +132,7 @@
     margin-top: 30px;
     justify-content: center;
     margin-bottom: 30px;
+    width: 100%;
 }
 .newsletter-area .title{
     margin: 40px 0px 30px 0px;
@@ -147,6 +148,7 @@
 }
 
 .newsletter-area .mail{
+    width: 100%;
     justify-content: center;
     margin: 40px 0px 40px 0px;
     padding:20px 0;
@@ -201,22 +203,26 @@
         font-size: 20px;
         font-weight: 400;
     }
-    .newsletter-area{
-        width: 100%;
-    }
     .newsletter-area .title{
         width: 90%;
         transform: translateX(7%);
+        margin: 0;
+    }
+    .newsletter-area .mail{
+        margin: 0;
     }
     .newsletter-area .title span{
         font-size: 25px;
     }
     .email-field{
-    transform: translateX(15%);
+        transform: none;
     }
     .newsletter-area .mail .email-field{
         width: 300px;
+        position: relative;
+        left: 15%;
     }
+    
     
 
 }

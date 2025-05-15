@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -87,7 +90,12 @@ button{
     list-style: none;
     padding: 10px;
 }
-
+.menu-wrapper > .nav-bar > ul:first-of-type > li:hover a{
+    color: #cb051c;
+}
+.menu-wrapper > .nav-bar > ul:first-of-type > li:hover button a{
+    color: white;
+}
 .sp-dropdown a{
     display: flex;
 }
@@ -258,6 +266,50 @@ button{
     border: none;
     background-color: white;
 }
+.search-wrapper{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+    align-items: center;
+    background-color: black;
+    border-radius: 60px;
+}
+
+.form-search{
+    width: 98%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-search{
+    background-color: white;
+    width: 44.78px;
+    display: flex;
+    justify-content: center;
+    border-radius: 60px;
+}
+.btn-search:hover{
+    background-color: #707073;
+    border: 1px solid black;
+}
+#search-input{
+    border-radius: 60px;
+    width: 80%;
+}
+#search-input::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+
+}
 .footer{
     background-color: black;
     padding-top: 30px;
@@ -379,6 +431,15 @@ hr{
         left: 50%;
         transform: translate(-50%, -50%);
 
+    }
+    .cart-dropdown .btn button a{
+        color: white;
+    }
+    .search-area{
+        width: 80%;
+    }
+    .form-search{
+        width: 95%;
     }
     .footer-contain{
         display: flex;

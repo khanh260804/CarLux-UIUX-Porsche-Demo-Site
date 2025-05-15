@@ -22,7 +22,8 @@ const products = [
         momen: "420 Nm",
         maxsp: "285 km/giờ",
         consume: "",
-        co2: ""
+        co2: "",
+        img_self: "https://porsche-vietnam.vn/wp-content/uploads/2013/11/porsche-718-cayman-s-model.png"
     },
     {
         id: 3,
