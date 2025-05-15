@@ -201,12 +201,22 @@
         font-size: 20px;
         font-weight: 400;
     }
+    .newsletter-area{
+        width: 100%;
+    }
+    .newsletter-area .title{
+        width: 90%;
+        transform: translateX(7%);
+    }
     .newsletter-area .title span{
-        font-size: 15px;
-        width: 300px;
+        font-size: 25px;
+    }
+    .email-field{
+    transform: translateX(15%);
     }
     .newsletter-area .mail .email-field{
-        width: 200px;
+        width: 300px;
     }
+    
 
 }
