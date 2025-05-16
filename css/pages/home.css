@@ -1,12 +1,56 @@
+body{
+    overflow-x: hidden;
+}
 .banner-wrapper{
     width: 100%;
     margin-top: 10px;
+    position: relative;
+}
+.banner-wrapper:hover .chevs{
+    display: flex;
 }
 .banner{
     width: 100%;
+}
+.chevs{
+    width: 95%;
     display: flex;
-    animation: scroll-left 30s linear infinite;
-
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.chevs img{
+    width: 60px;
+    height: 60px;
+}
+.chev-left, .chev-right{
+    cursor: pointer;
+}
+.dots{
+    position: absolute;
+    justify-content: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+.dot.active{
+    background-color: #4e5152;
+    transform: scaleX(2);
 }
 .slide{
     flex: 0 0 auto;
